@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./configure --with-debug --add-module=../echo-nginx-module --add-module=../headers-more-nginx-module --add-module=../nginx-toolkit-module --add-module=../nginx-multiport-module --add-module=../nginx-client-module --add-module=../nginx-rtmp-module
+make && make install

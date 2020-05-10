@@ -1,0 +1,4 @@
+#!/bin/bash
+
+valgrind --trace-children=yes --log-file=memcheck.log --tool=memcheck --vgdb=yes /usr/local/nginx/sbin/nginx
+

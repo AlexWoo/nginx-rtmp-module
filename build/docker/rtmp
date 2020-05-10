@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "$WORKDIR" == "" ];then
+    WORKDIR=~/
+fi
+
+docker run --rm -it -v $WORKDIR:/root/work/ -v $PWD/conf:/usr/local/nginx/conf/ --name rtmp alexwoo/rtmp /bin/bash

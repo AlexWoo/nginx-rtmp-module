@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build -t alexwoo/rtmp ./
+cp -f rtmp /usr/local/bin/
+cp -f reit /usr/local/bin/
