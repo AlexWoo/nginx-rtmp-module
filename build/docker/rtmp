@@ -4,4 +4,4 @@ if [ "$WORKDIR" == "" ];then
     WORKDIR=~/
 fi
 
-docker run --rm -it -v $WORKDIR:/root/work/ -v $PWD/conf:/usr/local/nginx/conf/ --name rtmp alexwoo/rtmp /bin/bash
+docker run --rm -it -p 80:80 -p 8000:8000 -p 1935:1935 -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 8083:8083 -p 1936:1936 -p 1937:1937 -p 1938:1938 -p 1939:1939 -v $WORKDIR:/root/work/ -v $PWD/conf:/usr/local/nginx/conf/ --name rtmp alexwoo/rtmp /bin/bash
